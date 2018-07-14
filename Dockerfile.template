@@ -8,8 +8,10 @@ COPY package.json .
 
 RUN JOBS=MAX npm install --unsafe-perm --production
 
+RUN npm run build
+
 COPY . ./
 
-RUN node --check src/app.js
+RUN node --check dist/app.js
 
 CMD node src/app.js

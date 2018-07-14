@@ -1,25 +1,31 @@
 {
-  "name": "sense-snake",
-  "version": "0.0.1",
-  "description": "Snake on the sensehat with raspberry pi and resin",
-  "main": "src/app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/resin-io-playground/sense-snake.git"
-  },
-  "author": "Cameron Diver <cameron@resin.io>",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/resin-io-playground/sense-snake/issues"
-  },
-  "homepage": "https://github.com/resin-io-playground/sense-snake#readme",
-  "dependencies": {
-    "lodash": "^4.17.4",
-    "sense-hat-led": "^1.0.1",
-    "sense-joystick": "0.0.2",
-    "socket.io-client": "^2.1.1"
-  }
+	"name": "sense-snake",
+	"version": "0.0.1",
+	"description": "Snake on the sensehat with raspberry pi and resin",
+	"main": "src/app.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"build": "babel src -d dist"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/resin-io-playground/sense-snake.git"
+	},
+	"author": "Cameron Diver <cameron@resin.io>",
+	"license": "Apache-2.0",
+	"bugs": {
+		"url": "https://github.com/resin-io-playground/sense-snake/issues"
+	},
+	"homepage": "https://github.com/resin-io-playground/sense-snake#readme",
+	"dependencies": {
+		"lodash": "^4.17.4",
+		"sense-hat-led": "^1.0.1",
+		"sense-joystick": "0.0.2",
+		"socket.io-client": "^2.1.1"
+	},
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-preset-es2015": "^6.24.1",
+		"nodemon": "^1.18.2"
+	}
 }
