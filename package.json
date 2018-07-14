@@ -4,8 +4,7 @@
 	"description": "Snake on the sensehat with raspberry pi and resin",
 	"main": "src/app.js",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "babel src -d dist"
+		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"repository": {
 		"type": "git",
@@ -21,11 +20,6 @@
 		"lodash": "^4.17.4",
 		"sense-hat-led": "^1.0.1",
 		"sense-joystick": "0.0.2",
-		"socket.io-client": "^2.1.1",
-		"babel-cli": "^6.26.0",
-		"babel-preset-es2015": "^6.24.1"
-	},
-	"devDependencies": {
-		"nodemon": "^1.18.2"
+		"socket.io-client": "^2.1.1"
 	}
 }

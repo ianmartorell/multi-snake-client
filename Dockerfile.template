@@ -1,7 +1,15 @@
 FROM resin/%%RESIN_MACHINE_NAME%%-node:8.5.0
+
 ENV INITSYSTEM on
+
 WORKDIR /usr/src/app
+
 COPY package.json .
-RUN npm install
+
+RUN JOBS=MAX npm install --unsafe-perm --production
+
 COPY . ./
-CMD node dist/app.js
+
+RUN node --check src/app.js
+
+CMD node src/app.js
